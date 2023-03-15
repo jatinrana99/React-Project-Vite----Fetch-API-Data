@@ -26,6 +26,48 @@ export default class Fetch extends Component{
     render(){
         const {items}= this.state;
 
-        return()
+        return(
+            items.map((item)=> {
+                return(
+                    <article key={item.id}
+                    >
+                        {/* upper div */}
+                        <div>
+                            {/* left div */}
+                            <div>
+                                <h3>
+                                    {item.company.name}
+                                </h3>
+                                <h3>
+                                    {item.company.catchPhrase}
+                                </h3>
+                            </div>
+
+                            {/* right div */}
+                            <div>
+                                <h4>
+                                    {item.phone}
+                                </h4>
+                                <h4>
+                                    {item.address.city}
+                                </h4>
+                            </div>
+                        </div>
+                            {/* lower div */}
+                            <div>
+                                <h2>
+                                    {item.company.bs}
+                                </h2>
+                                <h2>
+                                    {item.name}
+                                </h2>
+                                <h2>
+                                    {item.email}
+                                </h2>
+                            </div>
+                    </article>
+                )
+            })
+        )
     }
 }
