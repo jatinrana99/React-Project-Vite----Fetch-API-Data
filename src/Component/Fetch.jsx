@@ -30,38 +30,38 @@ export default class Fetch extends Component{
             items.map((item)=> {
                 return(
                     <article key={item.id}
-                    >
+                     className="mainBox">
                         {/* upper div */}
-                        <div>
+                        <div className="upperDiv">
                             {/* left div */}
                             <div>
-                                <h3>
+                                <h3 className="h3">
                                     {item.company.name}
                                 </h3>
-                                <h3>
+                                <h3 className="h3">
                                     {item.company.catchPhrase}
                                 </h3>
                             </div>
 
                             {/* right div */}
                             <div>
-                                <h4>
+                                <h4 className="h4">
                                     {item.phone}
                                 </h4>
-                                <h4>
+                                <h4 className="h4">
                                     {item.address.city}
                                 </h4>
                             </div>
                         </div>
                             {/* lower div */}
-                            <div>
-                                <h2>
+                            <div className="lowerDiv">
+                                <h2 className="h2">
                                     {item.company.bs}
                                 </h2>
-                                <h2>
+                                <h2 className="h2">
                                     {item.name}
                                 </h2>
-                                <h2>
+                                <h2 className="h2">
                                     {item.email}
                                 </h2>
                             </div>

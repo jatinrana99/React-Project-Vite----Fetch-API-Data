@@ -1,3 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+
+.h4{
+    /* background-color: blue; */
+}
+
+.h3{
+    /* background-color: brown; */
+}
+
+.h2{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+}
+
+.lowerDiv {
+    /* background-color: chartreuse; */
+}
+
+.upperDiv {
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBox{
+    margin: 10px;
+    border: 4px solid;
+    border-radius: 15%;
+    width: 40%;
+    
+    
+}
+.mainBox:hover{
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 40%;
+    width: 42%;
+    background-color: rgba(222, 184, 135, 0.708);
+    
+    
+}
+.fetchDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
